@@ -1,4 +1,4 @@
-#Cai Install - Steam游戏清单管理工具
+# cai install
 
 ![Python 3.7+](https://img.shields.io/badge/Python-3.7%2B-blue)
 
