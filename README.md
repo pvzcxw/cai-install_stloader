@@ -1,6 +1,8 @@
 #Cai Install - Steam游戏清单管理工具
-https://img.shields.io/badge/Python-3.7%252B-blue
-https://img.shields.io/badge/License-GPLv3-green
+
+![Python 3.7+](https://img.shields.io/badge/Python-3.7%2B-blue)
+
+![License-GPLv3](https://img.shields.io/badge/License-GPLv3-green)
 
 Cai Install是一款强大的Steam游戏清单管理工具，支持多种解锁方案（SteamTools和GreenLuma），能够从多个清单库自动下载并安装游戏清单文件。
 
