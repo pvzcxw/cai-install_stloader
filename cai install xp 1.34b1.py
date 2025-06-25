@@ -163,14 +163,14 @@ def init():
 
 
 
-    log.info('软件作者:pvzcxw')
+    log.info('原作者: ikun0014 修改: oureveryday 二开作者: pvzcxw')
     log.info('本项目采用GNU General Public License v3开源许可证, 请勿用于商业用途')
     log.info('Cai install XP版本：1.34b1')
     log.info(
         'Cai install项目Github仓库: https://github.com/pvzcxw/cai-install_stloader(进入此页面查看软件感谢名单)'
     )
     log.warning(
-        '菜Games出品 本项目完全开源免费，作者b站:菜Games-pvzcxw,因为清单库成本,请多多赞助使用'
+        '菜Game二开 本项目完全开源免费，菜Game b站:菜Games-pvzcxw,因为清单库成本,请多多赞助使用'
     )
     log.warning(
         '官方Q群:993782526'
