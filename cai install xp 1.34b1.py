@@ -170,7 +170,7 @@ def init():
         'Cai install项目Github仓库: https://github.com/pvzcxw/cai-install_stloader(进入此页面查看软件感谢名单)'
     )
     log.warning(
-        '菜Game二开 本项目完全开源免费，菜Game b站:菜Games-pvzcxw,因为清单库成本,请多多赞助使用'
+        '菜Game二开 本项目完全开源免费，菜Game b站:菜Games-pvzcxw。'
     )
     log.warning(
         '官方Q群:993782526'
