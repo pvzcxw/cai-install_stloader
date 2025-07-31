@@ -387,12 +387,9 @@ class CaiBackend:
         output_filename = f"{depot_id}_{manifest_id}.manifest"
         self.log.info(f"准备下载清单: {output_filename}")
 
-        # FIXED: 使用修复版本中确认有效的URL源，并优先使用
-        urls = [
-            f"https://steamcontent.tnkjmec.com/depot/{depot_id}/manifest/{manifest_id}/5",  # 修复版本中确认的有效源
-            f"https://manifest.steam.run/depot/{depot_id}/manifest/{manifest_id}",
-            f"https://api.manifest.download/depot/{depot_id}/manifest/{manifest_id}",
-        ]
+        # FIXED: 使用修复版本中确认有效的URL源，并优先使用（两个源貌似不可使用）
+        urls = f"https://steamcontent.tnkjmec.com/depot/{depot_id}/manifest/{manifest_id}/5"   # 修复版本中确认的有效源
+
         
         manifest_content = None
         for url in urls:
@@ -424,13 +421,6 @@ class CaiBackend:
                                 
                                 # 读取这个文件的二进制内容作为清单内容
                                 manifest_content = zip_ref.read(filename_inside_zip)
-                                
-                        except zipfile.BadZipFile:
-                            self.log.error("ZIP文件损坏，尝试下一个源...")
-                            continue
-                        except Exception as e:
-                            self.log.error(f"处理ZIP文件时出错: {e}，尝试下一个源...")
-                            continue
                     else:
                         # 如果不是ZIP文件，直接使用原始内容
                         manifest_content = raw_content
@@ -439,14 +429,14 @@ class CaiBackend:
                         self.log.info(f'下载成功: {output_filename} (来自 {url.split("/")[2]})')
                         break
                 else:
-                    self.log.warning(f'下载失败 (状态码: {response.status_code})，尝试下一个源...')
+                    self.log.warning(f'下载失败 (状态码: {response.status_code})')
             except httpx.RequestError as e:
-                self.log.warning(f'下载失败 (错误: {e})，尝试下一个源...')
+                self.log.warning(f'下载失败 (错误: {e})')
             except Exception as e:
-                self.log.warning(f'处理下载时出错: {e}，尝试下一个源...')
+                self.log.warning(f'处理下载时出错: {e}')
         
         if not manifest_content:
-            self.log.error(f"尝试所有下载源后，仍无法下载清单 {output_filename}。")
+            self.log.error(f"尝试所有下载方式后，仍无法下载清单 {output_filename}。")
             return False
 
         try:
