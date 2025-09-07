@@ -24,7 +24,7 @@ Cai Install是一款强大的Steam游戏清单管理工具，支持多种解锁�
 pip install -r requirements.txt
 
 运行程序
-python "cai install xp 1.34b1.py"
+python "frontend.py"
 
 操作流程
 1.输入游戏AppID、Steam链接或游戏名称
@@ -64,7 +64,7 @@ Q: 如何获取GitHub个人访问令牌？
 A: 在GitHub设置中创建个人访问令牌，勾选repo权限即可。
 
 Q: 支持哪些解锁工具？
-A: 目前完美支持SteamTools和GreenLuma 2024。
+A: 目前完美支持SteamTools和GreenLuma 2025
 
 Q: 如何批量添加多个游戏？
 A: 输入AppID时用英文逗号分隔多个ID。
