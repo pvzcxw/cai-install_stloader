@@ -1,4 +1,3 @@
-```markdown
 # 🚀 Cai-Install STLoader (Cai Install XP)
 
 ![Version](https://img.shields.io/badge/Version-1.64p1-blue)
