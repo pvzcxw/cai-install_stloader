@@ -46,6 +46,16 @@
 *   **ST 浮动版本控制**：为 SteamTools 用户提供“自动更新清单”选项。开启后，生成的 lua 脚本将不锁定特定版本号（注释掉 `setManifestid`），由 SteamTools 自身接管后续的清单版本浮动更新。
 *   **本体自更新**：内置版本检查器，发现 GitHub Release 有新版本时，会弹出友好的 UI 界面提示更新日志并引导下载。
 
+### 📸 界面展示 (Screenshots)
+
+这里是 Cai Install XP 的实际运行界面：
+
+<div align="center">
+  <!-- 如果你用的是方法一，把下面的链接换成相对路径，比如 assets/main.png -->
+  <!-- 如果你用的是方法二，把下面的链接换成 GitHub 自动生成的链接 -->
+  <img src="https://github.com/pvzcxw/cai-install_stloader/blob/main/assets/Screenshot_20260406_095718.jpg" width="800" alt="主界面">
+</div>
+
 ---
 
 ## 🛠️ 安装与运行指南
